@@ -259,6 +259,16 @@ p {
   transform: rotate(-30deg) scale(1.1);
 }
 
+
+.major__icon img {
+  transition: all var(--animation-duration) ease;
+}
+
+.major__icon img:hover {
+  color: var(--color-pink);
+  transform: rotate(-30deg) scale(1.1);
+}
+
 .major__title,
 .major__description {
   color: var(--color-dark-grey);
