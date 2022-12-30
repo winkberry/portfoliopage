@@ -259,6 +259,11 @@ p {
   transform: rotate(-30deg) scale(1.1);
 }
 
+.major__icon img {
+  width: 100px;
+  height: 100px;
+}
+
 .major__icon .djicon {
   transition: all var(--animation-duration) ease;
 }
