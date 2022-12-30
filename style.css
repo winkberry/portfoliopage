@@ -258,9 +258,6 @@ p {
   color: var(--color-pink);
   transform: rotate(-30deg) scale(1.1);
 }
-.major__icon img {
-
-}
 
 .major__icon .djicon {
   transition: all var(--animation-duration) ease;
