@@ -259,8 +259,8 @@ p {
   transform: rotate(-30deg) scale(1.1);
 }
 .djicon {
-  width: 100%;
-  height: 100%;
+  width: 20%;
+  height: 20%;
 }
 
 .major__icon .djicon {
