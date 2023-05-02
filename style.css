@@ -440,6 +440,11 @@ p {
   min-height: 100%;
 }
 
+.randomnumber_img {
+  max-width: 100%;
+  min-height: 50%;
+}
+
 .project__description {
   position: absolute;
   background-color: var(--color-pink);
