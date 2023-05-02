@@ -442,7 +442,7 @@ p {
 
 .randomnumber_img {
   max-width: 100%;
-  min-height: 50%;
+  height: 100%;
 }
 
 .project__description {
