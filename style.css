@@ -183,7 +183,7 @@ p {
 
 /* Home */
 #home {
-  background: url("img/home-background.png") center/cover no-repeat;
+  background: url("img/배경4.jpg") center/cover no-repeat;
   padding: 40px;
   padding-top: 100px;
   text-align: center;
@@ -266,9 +266,20 @@ p {
 
 .major__icon .djicon {
   transition: all var(--animation-duration) ease;
+  width: 60%;
+  height: auto;
 }
 
 .major__icon .djicon:hover {
+  color: var(--color-pink);
+  transform: rotate(-30deg) scale(1.1);
+}
+
+.major__icon .djicon1 {
+  transition: all var(--animation-duration) ease;
+}
+
+.major__icon .djicon1:hover {
   color: var(--color-pink);
   transform: rotate(-30deg) scale(1.1);
 }
