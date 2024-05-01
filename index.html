@@ -15,6 +15,82 @@
 <link rel="stylesheet" href="style.css" />
 <script src="main.js" defer></script>
 <!-- font-family: 'Open Sans', sans-serif; (위 폰트를 쓸수 있는 CSS코드)-->
+<style>
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+    }
+
+    .modal2 {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+    }
+    
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 80%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s
+    }
+
+    .close {
+        color: white;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .close2 {
+        color: white;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close2:hover,
+    .close2:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .video-container {
+        padding: 15px;
+    }
+</style>
+
 </head>
 <body>
 
@@ -337,16 +413,17 @@
             <button class="category__btn" data-filter="nodejs">NodeJs<span class="category__count">1</span></button>
         </div>
         <div class="work__projects">
-            <a href="" target="blank" class="project" data-type="php">
+            <a href="javascript:void(0);" class="project" data-type="php">
                 <img src="img/kps동우회메인.png" alt="" class="project__img"/>
                 <div class="project__description">
                     <h3>한전KPS동우회 (제작중)</h3>
                     <span>한전KPS 퇴직자들의 모임 사이트</span>
                     <span>PHP, HTML, CSS, JavaScript, Jquery, Ajax, Mysql(Mariadb), Apache(Xampp), Photoshop, FontAwesome</span>
-                    <span>게시판, 다중파일업로드, 추천검색어, 관리자페이지, Summernote에디터</span>
+                    <span>반응형웹, 게시판, 다중파일업로드, 추천검색어, 관리자페이지, Summernote에디터</span>
+                    <div><span><button id="myBtn" style="border: 0;">상세보기</button></span><span><i style="color:#fff" class="fa-solid fa-arrow-pointer"></i></span></div>
                 </div>
             </a>
-            <a href="" target="blank" class="project" data-type="php">
+            <a href="javascript:void(0);" class="project" data-type="php">
                 <img src="img/오아시스메인페이지작업.png" alt="" class="project__img"/>
                 <div class="project__description">
                     <h3>오아시스 메인페이지</h3>
@@ -354,6 +431,7 @@
                     <span>SVG, JavaScript, Jquery, CSS, HTML, PHP, Mysql, Apache</span>
                     <span>SVG지도, CSS모션 사이드 메뉴바</span>
                     <span>지도에서 지역을 누르면 전국 직원들 연락처가 뜸</span>
+                    <div><button id="myBtn2" style="border: 0;">상세보기</button><i style="color:#fff" class="fa-solid fa-arrow-pointer"></i></div>
                 </div>
             </a>
             <a href="" target="blank" class="project" data-type="php">
@@ -481,5 +559,65 @@
 <button class="arrow-up">
     <i class="fas fa-arrow-up"></i>
 </button>
+<!-- 동우회 -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="video-container">
+          <video autoplay loop muted controls style="width:100%;">
+              <source src="img/클론코딩메인.mp4" type="video/mp4">
+              모달창에서 지원하는 비디오 형식이 아닙니다.
+          </video>
+      </div>
+    </div>
+  </div>
+<!-- 오아시스 -->
+  <div id="myModal2" class="modal2">
+    <div class="modal-content">
+      <span class="close2">&times;</span>
+      <div class="video-container">
+          <video autoplay loop muted controls style="width:100%;">
+              <source src="img/오아시스.mp4" type="video/mp4">
+              모달창에서 지원하는 비디오 형식이 아닙니다.
+          </video>
+      </div>
+    </div>
+  </div>
+  <script>
+    var modal = document.getElementById("myModal");
+    var modal2 = document.getElementById("myModal2");
+    var btn = document.getElementById("myBtn");
+    var btn2 = document.getElementById("myBtn2");
+    var span = document.getElementsByClassName("close")[0];
+    var span2 = document.getElementsByClassName("close2")[0];
+    
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    btn2.onclick = function() {
+      modal2.style.display = "block";
+    }
+    
+    span2.onclick = function() {
+      modal2.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+      if (event.target == modal2) {
+        modal2.style.display = "none";
+      }
+    }
+    </script>
 </body>
 </html>
