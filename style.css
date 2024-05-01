@@ -206,12 +206,12 @@ p {
 }
 
 .home__contact {
-  color: var(--color-black);
+  color: var(--color-pink);
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
   margin: 24px;
   padding: 8px 12px;
-  border: 2px solid var(--color-black);
+  border: 2px solid var(--color-pink);
   border-radius: var(--size-border-radius);
 }
 
