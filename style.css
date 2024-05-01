@@ -635,7 +635,7 @@ p {
   }
 
   .project {
-    flex: 1 1 70%;
+    flex: 1 1 100%;
   }
 
   .category__btn {
