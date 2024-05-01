@@ -69,7 +69,7 @@ button {
 h1 {
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
-  color: var(--color-black);
+  color: var(--color-grey);
   margin: 16px 0px;
 }
 
@@ -102,7 +102,7 @@ p {
   justify-content: space-between;
   background-color: transparent;
   align-items: center;
-  color: var(--color-black);
+  color: var(--color-dark-grey);
   padding: 4px;
   transition: all var(--animation-duration) ease-in-out;
   z-index: 1;
@@ -154,7 +154,7 @@ p {
 }
 
 .navbar__menu__item:hover {
-  border-color: var(--color-black);
+  border-color: var(--color-dark-grey);
   background-color: var(--color-white);
 }
 
