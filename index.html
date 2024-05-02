@@ -81,6 +81,7 @@
         padding: 15px;
         width: 90%;
         margin-top:3%;
+        text-align:center;
     }
 
     .projectimg > img {
@@ -607,20 +608,28 @@
     </div>
   </div>
 <!-- 오아시스 -->
-  <div id="myModal2" class="modal2">
+<div id="myModal2" class="modal2">
     <div class="modal-content">
         <div style="display: flex; justify-content: space-evenly;">
             <span class="video-container">
-                <video autoplay loop muted controls style="width:100%;">
-                    <source src="img/오아시스.mp4" type="video/mp4">
+                <video style="width:100%;" id="video" autoplay loop muted controls>
+                    <source src="img/oasis.mp4" type="video/mp4">
                     모달창에서 지원하는 비디오 형식이 아닙니다.
                 </video>
+                <button style="border:0; font-size:20px; margin-top:1%; font-weight:800; color:#1b9dee;" onclick="previousVideo()"> <i class="fas fa-solid fa-backward"></i> 이전 동영상 </button>
+                <button style="border:0; font-size:20px; font-weight:800; color:#1b9dee;" onclick="nextVideo()"> 다음동영상 <i class="fas fa-solid fa-forward"></i> </button>
             </span>
             <span class="close2">&times;</span>
         </div>
-        <div>
-
-
+        <div style="max-height: 500px; overflow-y: auto;">
+            <div class="projectimg" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom:5%;">
+                <p>오아시스 로그인 화면 (web)</p>
+                <img src="img/오아시스로그인화면.png">
+                <p>오아시스 로그인 화면 (mobile)</p>
+                <div style="width:100%; text-align: center;">
+                    <img style="width: 30%;" src="img/오아시스로그인모바일화면.png">
+                </div>
+            </div>
         </div>
     </div>
   </div>
@@ -659,6 +668,39 @@
         modal2.style.display = "none";
       }
     }
+
+    // 오아시스 영상 2개 돌리기
+
+    let videoList = ['img/oasis.mp4', 'img/oasissidebar.mp4']; // 여기에 동영상 파일 경로를 추가하세요.
+    let currentVideoIndex = 0;
+
+function setVideoSource(videoIndex) {
+    const videoElement = document.getElementById("video");
+    videoElement.src = videoList[videoIndex];
+    videoElement.play();
+}
+
+function nextVideo() {
+    if (currentVideoIndex < videoList.length - 1) {
+        currentVideoIndex++;
+    } else {
+        currentVideoIndex = 0; // 마지막 동영상에서 다음을 누르면 첫 번째 동영상으로 이동
+    }
+    setVideoSource(currentVideoIndex);
+}
+
+function previousVideo() {
+    if (currentVideoIndex > 0) {
+        currentVideoIndex--;
+    } else {
+        currentVideoIndex = videoList.length - 1; // 첫 번째 동영상에서 이전을 누르면 마지막 동영상으로 이동
+    }
+    setVideoSource(currentVideoIndex);
+}
+
+// 초기 비디오 설정
+setVideoSource(currentVideoIndex);
+
     </script>
 </body>
 </html>
