@@ -48,6 +48,21 @@
         background-color: rgb(0,0,0);
         background-color: rgba(0,0,0,0.4);
     }
+
+    .modal3 {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 90%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+    }
     
     .modal-content {
         display: flex;
@@ -74,6 +89,13 @@
     }
 
     .close2 {
+        color: darkgray;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close3 {
         color: darkgray;
         float: right;
         font-size: 28px;
@@ -165,7 +187,7 @@
         <div class="major__icon">
             <!-- <i class="fab fa-brands fa-node"></i> -->
             <!-- <i class="fab fa-brands fa-php" style="color: #1b9dee;"></i> -->
-            <img class="djicon1" src="img/jobs/django-logo.png" style="width:70%; height:30%;">
+            <img class="djicon1" src="img/jobs/django-logo.png" style="width:70%; height:25%;">
                 </div>
             <h2 class="major__title">Back-end</h2>
             <p class="major__description">
@@ -193,7 +215,7 @@
             />
             <div class="job__description">
                 <p class="job__name">
-                    <b>원티드 프리온보딩 백엔드 교육</b>
+                    <b>원티드 프리온보딩</b> 백엔드 교육 수료
                 </p>
                 <p class="job__period">
                     2024.08~ 2024.09   
@@ -292,70 +314,7 @@
                     <h3 class="skillset__title">Skills</h3>
                     <div class="skill">
                         <div class="skill__description">
-                            <span>PHP</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill_value" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>HTML</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill_value" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>CSS</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill_value" style="width: 70%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>JavaScript</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill_value" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>jquery</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill_value" style="width: 70%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>ajax</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill_value" style="width: 70%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>mysql</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill_value" style="width: 70%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>Apache</span>
+                            <span>Django</span>
                             <span>60%</span>
                         </div>
                         <div class="skill__bar">
@@ -364,7 +323,34 @@
                     </div>
                     <div class="skill">
                         <div class="skill__description">
-                            <span>React</span>
+                            <span>python</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill_value" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>PHP</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill_value" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <!-- <div class="skill">
+                        <div class="skill__description">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill_value" style="width: 90%;"></div>
+                        </div>
+                    </div> -->
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>CSS</span>
                             <span>50%</span>
                         </div>
                         <div class="skill__bar">
@@ -373,38 +359,74 @@
                     </div>
                     <div class="skill">
                         <div class="skill__description">
+                            <span>JavaScript</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill_value" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>jquery</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill_value" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>ajax</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill_value" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>mysql</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill_value" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Apache</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill_value" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>React</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill_value" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
                             <span>NodeJS</span>
-                            <span>40%</span>
+                            <span>30%</span>
                         </div>
                         <div class="skill__bar">
-                            <div class="skill_value" style="width: 40%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>Django</span>
-                            <span>40%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill_value" style="width: 40%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>python</span>
-                            <span>40%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill_value" style="width: 40%;"></div>
+                            <div class="skill_value" style="width: 30%;"></div>
                         </div>
                     </div>
                     <div class="skill">
                         <div class="skill__description">
                             <span>mongodb</span>
-                            <span>40%</span>
+                            <span>20%</span>
                         </div>
                         <div class="skill__bar">
-                            <div class="skill_value" style="width: 40%;"></div>
+                            <div class="skill_value" style="width: 20%;"></div>
                         </div>
                     </div>
                 </div>
@@ -437,19 +459,41 @@
             <h1>My work</h1>
         <h3>Projects</h3>
         <div class="work__categories">
-            <button class="category__btn selected" data-filter="*">All<span class="category__count">10</span></button>
-            <button class="category__btn" data-filter="php">PHP<span class="category__count">3</span></button>
-            <button class="category__btn" data-filter="django">Django<span class="category__count">2</span></button>
+            <button class="category__btn selected" data-filter="*">All<span class="category__count">12</span></button>
+            <button class="category__btn" data-filter="php">PHP<span class="category__count">4</span></button>
+            <button class="category__btn" data-filter="django">Django<span class="category__count">3</span></button>
             <button class="category__btn" data-filter="flask">Flask<span class="category__count">1</span></button>
             <button class="category__btn" data-filter="Flutter">Flutter<span class="category__count">1</span></button>
             <button class="category__btn" data-filter="react">React<span class="category__count">2</span></button>
             <button class="category__btn" data-filter="nodejs">NodeJs<span class="category__count">1</span></button>
         </div>
         <div class="work__projects">
+            <a href="javascript:void(0);" class="project" data-type="django">
+                <img src="img/projects/예산관리.png" alt="" class="project__img"/>
+                <div class="project__description">
+                    <h3>예산 관리 어플리케이션</h3>
+                    <span>원티드 프리온보딩 백엔드 개인 과제</span>
+                    <span>django drf, Docker, Python, PostgreSQL</span>
+                    <span></span>
+                    <object>
+                        <div><a href="https://github.com/winkberry/wanted_budget_management">Github link</a></div>  
+                    </object>
+                </div>
+            </a>
+            <a href="javascript:void(0);" class="project" data-type="php">
+                <img src="img/projects/디컴키오스크영상.png" alt="" class="project__img" style="width: 30%; height:100%;"/>
+                <div class="project__description">
+                    <h3>디컴 키오스크 프론트, 퍼블리싱</h3>
+                    <span>휴마니타스 자체 앱 '디컴' 키오스크 작업</span>
+                    <span>환자정보 입력 *표 기능, 일괄 선택 기능, 다운로드 CSS 애니메이션 작업 등</span>
+                    <span></span>
+                    <div><span><button id="myBtn3" style="border: 0; font-weight:600; color:#1b9dee; font-size:17px; background-color:#fff;">동영상 보기</button></span><span><i style="color:#fff" class="fa-solid fa-arrow-pointer"></i></span></div>
+                </div>
+            </a>
             <a href="javascript:void(0);" class="project" data-type="php">
                 <img src="img/kps동우회메인.png" alt="" class="project__img"/>
                 <div class="project__description">
-                    <h3>한전KPS동우회 (제작중)</h3>
+                    <h3>한전KPS동우회</h3>
                     <span>한전KPS 퇴직자들의 모임 사이트</span>
                     <span>PHP, HTML, CSS, JavaScript, Jquery, Ajax, Mysql(Mariadb), Apache(Xampp), Photoshop, FontAwesome</span>
                     <span>반응형웹, 게시판, 다중파일업로드, 추천검색어, 관리자페이지, Summernote에디터</span>
@@ -497,7 +541,6 @@
                         <div><a href="https://southern-lace-c46.notion.site/c002067db1234e548357b7e60218908d">Notion link</a></div>
                         <div><a href="https://github.com/Sahayana/retroflix">Github link</a></div>  
                     </object>
-
                 </div>
             </a>
             <a href="javascript:void(0);" class="project" data-type="flask">
@@ -678,13 +721,35 @@
         </div>
     </div>
   </div>
+  <div id="myModal3" class="modal3">
+    <div class="modal-content">
+        <div style="display: flex; justify-content: space-evenly;">
+            <span class="video-container">
+                <video style="width:100%;" id="video" autoplay loop muted controls>
+                    <source src="img/projects/디컴키오스크영상.mp4" type="video/mp4">
+                    모달창에서 지원하는 비디오 형식이 아닙니다.
+                </video>
+            </span>
+            <span class="close3">&times;</span>
+        </div>
+        <div style="max-height: 500px; overflow-y: auto;">
+            <div class="projectimg" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom:5%;">
+                <p>환자정보 입력 *표 기능, 일괄 선택 기능, 다운로드 CSS 애니메이션 작업 등</p>
+            </div>
+        </div>
+    </div>
+</div>
+
   <script>
     var modal = document.getElementById("myModal");
     var modal2 = document.getElementById("myModal2");
+    var modal3 = document.getElementById("myModal3");
     var btn = document.getElementById("myBtn");
     var btn2 = document.getElementById("myBtn2");
+    var btn3 = document.getElementById("myBtn3");
     var span = document.getElementsByClassName("close")[0];
     var span2 = document.getElementsByClassName("close2")[0];
+    var span3 = document.getElementsByClassName("close3")[0];
     
     btn.onclick = function() {
       modal.style.display = "block";
@@ -711,6 +776,20 @@
     window.onclick = function(event) {
       if (event.target == modal2) {
         modal2.style.display = "none";
+      }
+    }
+
+    btn3.onclick = function() {
+      modal3.style.display = "block";
+    }
+    
+    span3.onclick = function() {
+      modal3.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+      if (event.target == modal3) {
+        modal3.style.display = "none";
       }
     }
 
